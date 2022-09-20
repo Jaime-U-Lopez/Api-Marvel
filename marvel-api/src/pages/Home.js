@@ -1,3 +1,10 @@
-export default function Home(propos) {
-    return(<p>estamos desde home</p>)
+import Header from "../components/Header/Header";
+
+export default function Home(props) {
+    return(
+    
+    <div>
+        <p>desde home </p>
+    </div>)
+            
 };

@@ -5,19 +5,22 @@ import Home from './pages/Home';
 import Series from './pages/Series';
 import Comics from './pages/Comics';
 import Error404 from './pages/Error404';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div>    
 
+
     <Router>
-  
+    <Header></Header>
      <Routes>
-          <Route  path='/' exact component={()=><Home/>}/>
-          <Route path='/inicio' exact component={()=> <Home/>}/>
-          <Route path='/series' exact component={()=> <Series/>}/>
-          <Route path='/comics' exact component={()=> <Comics/>}/>
-          <Route component ={() =><Error404/>  }/>
+         <Route path="/"  exact element={<Home/>}/>
+          <Route path='/inicio' exact element={<Home/>}/>
+          <Route path='/series' exact element={<Series/>}/>
+          <Route path='/comics' exact element={<Comics/>}/>
+          <Route path='/*' exact element={<Error404/>}/>
+       
        </Routes>
 
       </Router>
