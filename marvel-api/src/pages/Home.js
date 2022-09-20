@@ -1,11 +1,13 @@
 
-
+import BestCharacters from "../components/BestCharacters";
+import ListLastEvents from "../components/ListLastEvents";
 
 export default function Home(props) {
     return(
-    
-    <div>
-        <p>desde home </p>
-    </div>)
-            
+        
+        <div>
+            <BestCharacters/>
+            <ListLastEvents/>
+        </div>
+    )
 };
