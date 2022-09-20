@@ -1,6 +1,1 @@
-export {default} from './Header.js';
-
-
-<div>
-    hola
-</div>
+export {default} from './Header';
