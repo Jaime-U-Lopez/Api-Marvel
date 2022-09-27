@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Card,Header } from 'semantic-ui-react';
 import Containers from '../Containers';
-import useFetch from '../Hooks/UseFetch';
+import useFetch from '../Api_Hook/UseFetch';
 import './ListLastEvents.scss';
 import LastEvents from '../LastEvent/LastEvents';
+import ListSeries from '../ListSeries/ListSeries';
 
 export default function ListLastEvents(params) {
     
@@ -23,8 +24,7 @@ export default function ListLastEvents(params) {
             <Containers  bg="light">
                 <Card.Group itemsPerRow={5}>
                     <LastEvents  LastEventsFetch={LastEventsFetch} />
-
-                </Card.Group>
+               </Card.Group>
 
             </Containers>
         </div>
