@@ -16,7 +16,7 @@ export default function LastEvents({ LastEventsFetch }) {
   console.log(results);
 
   return results.map((event, index) => (
-    <Card key={index} className="last-event">
+    <Card key={index} className="list-series">
       <Image
         src={`${event.thumbnail.path}.${event.thumbnail.extension}`}
         wrapped
