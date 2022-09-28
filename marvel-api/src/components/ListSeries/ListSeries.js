@@ -1,10 +1,8 @@
 import { Card, Icon, Image, Dimmer, Loader, Button } from "semantic-ui-react";
-import Containers from "../Containers";
+
 
 import "./ListSeries.scss";
 export default function ListSeries({ LastSeriesFetch }) {
-
-   
 
 
   const { loading, result } = LastSeriesFetch;
@@ -31,9 +29,7 @@ export default function ListSeries({ LastSeriesFetch }) {
           />
           <Card.Content>
           <Card.Header className="title">{rest.title} </Card.Header>
-       
-
-           
+                
 
             <Card.Description> {rest.description}</Card.Description>
           </Card.Content>
