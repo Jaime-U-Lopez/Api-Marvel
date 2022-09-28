@@ -16,14 +16,14 @@ export default function LastEvents({ LastEventsFetch }) {
   console.log(results);
 
   return results.map((event, index) => (
-    <Card key={index} className="list-series">
+    <Card key={index} className="last-event">
       <Image
         src={`${event.thumbnail.path}.${event.thumbnail.extension}`}
         wrapped
         ui={false}
       />
       <Card.Content>
-        <Card.Header className="titleEvent">{event.title} </Card.Header>
+        <Card.Header  className="title">{event.title} </Card.Header>
         <Card.Meta>
           <span>
             <Icon name="book" />

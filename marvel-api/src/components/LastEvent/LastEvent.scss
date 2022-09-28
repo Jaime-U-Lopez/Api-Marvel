@@ -7,19 +7,23 @@
 
 }
 
-.titleEvent{
-   color:black !important;
-   max-width: 200px !important;
+.title{
+
+   max-width: 20px !important;
   text-align: center !important;
-  max-height: 200px !important; 
-  font-size: 10px  !important;
+  max-height: 20px !important; 
+  font-size: 12px  !important;
+  margin: 0 !important;
+
 }
 
 .description{
-   text-align: center;
+   text-align: center !important;
    white-space: nowrap;
-   height: auto;
-   overflow: hidden;
-   text-overflow: ellipsis;
+   height: auto !important;
+   overflow: hidden !important;
+   text-overflow: ellipsis !important;
    max-width: 200px;
+   color: black !important;
+      
 }

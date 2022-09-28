@@ -3,6 +3,10 @@ import Containers from "../Containers";
 
 import "./ListSeries.scss";
 export default function ListSeries({ LastSeriesFetch }) {
+
+   
+
+
   const { loading, result } = LastSeriesFetch;
 
   if (loading || !result) {
@@ -17,21 +21,19 @@ export default function ListSeries({ LastSeriesFetch }) {
   console.log(results);
 
   return results.map((rest, index) => (
-    <Containers bg="light">
-      <Card.Group itemsPerRow={2}>
+ 
         <Card key={index} className="list-series">
           <Image
             src={`${rest.thumbnail.path}.${rest.thumbnail.extension}`}
             wrapped
             ui={false}
+            alt={rest.title}
           />
           <Card.Content>
-            <Card.Meta>
-              <span>
-                <Icon name="book" />
-                {rest.id}
-              </span>
-            </Card.Meta>
+          <Card.Header className="title">{rest.title} </Card.Header>
+       
+
+           
 
             <Card.Description> {rest.description}</Card.Description>
           </Card.Content>
@@ -52,7 +54,6 @@ export default function ListSeries({ LastSeriesFetch }) {
             </Button>
           </Card.Content>
         </Card>
-      </Card.Group>
-    </Containers>
+ 
   ));
 }
