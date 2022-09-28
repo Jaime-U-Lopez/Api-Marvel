@@ -1,4 +1,4 @@
-.list-series{
+.list-Comics{
 
     white-space: nowrap  !important;
     overflow: hidden  !important;
@@ -55,4 +55,19 @@
         height: 350px;
         
     }
+}
+
+
+.Container-Button{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    margin: 25px;
+   
+}
+
+.Container-Button button {
+
+    font-size: 20px !important;
+    text-transform: uppercase !important;
 }

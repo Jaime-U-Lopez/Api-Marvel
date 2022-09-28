@@ -3,12 +3,12 @@ import { Grid, Image, Header, Card } from "semantic-ui-react";
 import useFetch from "../components/Api_Hook/UseFetch";
 import Containers from "../components/Containers";
 import ListComic from "../components/ListComic";
-import BestCharacters from"../components/BestCharacters/BestCharacters"
+
 import slideComic from "../img/slide-comics.jpeg";
 
 export default function Comics(props) {
 
-  const [renderComics, setRenderComics] = useState(10);
+  const [renderComics, setRenderComics] = useState(5);
 
   const listComics = useFetch(
     `${process.env.REACT_APP_API_URL_BASE2}/comics?ts=1&apikey=${process.env.REACT_APP_API_KEY_MARVEL}&hash=${process.env.REACT_APP_HASH_ID}&orderBy=title&limit=${renderComics}`
@@ -28,7 +28,7 @@ export default function Comics(props) {
           <Containers >
           <Card.Group itemsPerRow={5}>
 
-            <ListComic   listComics={listComics}/>
+            <ListComic  renderComics={renderComics} setRenderComics={setRenderComics} listComics={listComics}/>
           </Card.Group>
 
           </Containers>
