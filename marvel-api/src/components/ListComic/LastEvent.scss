@@ -1,0 +1,39 @@
+.list-Comics{
+
+   white-space: nowrap  !important;
+   overflow: hidden  !important;
+   text-overflow: ellipse !important;
+   max-width: 200px !important;
+
+}
+.header{
+
+   color: white !important;
+   text-align: center !important;
+}
+.title{
+
+   max-width: 20px !important;
+  text-align: center !important;
+  max-height: 20px !important; 
+  font-size: 12px  !important;
+  margin: 10px !important;
+
+
+}
+
+.description{
+   text-align: center !important;
+   white-space: nowrap;
+   height: auto !important;
+   overflow: hidden !important;
+   text-overflow: ellipsis !important;
+   max-width: 200px;
+   color: black !important;
+      
+}
+
+.comics-page{
+
+   background-color: black;
+}

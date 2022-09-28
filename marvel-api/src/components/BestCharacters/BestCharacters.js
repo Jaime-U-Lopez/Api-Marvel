@@ -18,9 +18,9 @@ export default function BestCharacters(props) {
                         <Header as="h3">
                             Disfruta del mejor contenido.
                         </Header>
-                        <Button>
+                      {/*   <Button>
                             Ver todos los personajes
-                        </Button>
+                        </Button> */}
                     </Grid.Column>
                     <GridColumn  className="image-container">
                        <Image  src={marvelImage} alt="image"/>  

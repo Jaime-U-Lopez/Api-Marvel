@@ -1,4 +1,58 @@
-image{
+.list-series{
 
-    height: 200px;
+    white-space: nowrap  !important;
+    overflow: hidden  !important;
+    text-overflow: ellipse !important;
+    max-width: 200px !important;
+ 
+ }
+ 
+ .title{
+ 
+    max-width: 200px !important;
+   text-align: center !important;
+   max-height: 50px !important; 
+   font-size: 12px  !important;
+   margin: 5px !important;
+
+   
+ 
+ }
+ 
+ .description{
+    text-align: center !important;
+    white-space: nowrap;
+    height: auto !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 200px;
+    color: rgb(3, 3, 3) !important;
+       
+ }
+
+.container-button{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+
+}
+
+
+.Header_Style2{
+
+    background-color: black;
+    color: white !important;
+    margin: 0 0 11px 0 !important;
+    font-size: 50px !important;
+}
+
+.comics-page{
+
+    .image{
+
+        width: 100%;
+        background-color: rgb(233, 47, 47) !important;
+        height: 350px;
+        
+    }
 }

@@ -1,34 +1,32 @@
 .list-series{
 
-    .header{
-        height: 60px;
-        max-width: 200px !important;
-        text-align: center !important;
-        max-height: 20px !important; 
-        font-size: 15px  !important;
+    white-space: nowrap  !important;
+    overflow: hidden  !important;
+    text-overflow: ellipse !important;
+    max-width: 200px !important;
  
-        margin: 100px 0 50px 0 !important;
-
-    }
-
-    .description{
-
-        white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        max-width: 200px;
-    }
-
-    .image{
-
-        height: 300px;
-        display: flex;
-        margin: 0 0 20px  0 ;
-    }
-
-
-}
-
+ }
+ 
+ .title{
+ 
+    max-width: 200px !important;
+   text-align: center !important;
+   max-height: 200px !important; 
+   font-size: 12px  !important;
+   margin: 0 !important;
+ 
+ }
+ 
+ .description{
+    text-align: center !important;
+    white-space: nowrap;
+    height: auto !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 200px;
+    color: black !important;
+       
+ }
 
 .container-button{
     text-align: center;
